@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="Loading ... Please wait"
+        android:text="Loading ... please wait"
         android:textColor="@color/black"
         android:textSize="17dp" />
 

@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.view.inputmethod.InputMethodManager;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -71,12 +72,15 @@ public class MainActivity extends Activity {
         String message = question_text.getText().toString();
 
         if (question_text.getText().toString().trim().length() == 0) {
-            Toast.makeText(this, "Please input question ?", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.input_question), Toast.LENGTH_SHORT).show();
+            return;
+        }else if (question_text.getText().toString().trim().length() < 5) {
+            Toast.makeText(this, getString(R.string.input_question_short), Toast.LENGTH_SHORT).show();
             return;
         }
 
-        tvQuestion.setText("Q : " + question_text.getText());
-        tvAnswer.setText("A : ");
+        tvQuestion.setText(question_text.getText());
+        tvAnswer.setText("");
         question_text.setText("");
 
         EXECUTE_ACTION = true;
@@ -103,7 +107,9 @@ public class MainActivity extends Activity {
                                     @Override
                                     public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
                                         hud.dismiss();
-                                        tvAnswer.setText("A : " + data.getAnswer().toUpperCase());
+                                        tvAnswer.setText(data.getAnswer().toUpperCase());
+                                        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                                        inputMethodManager.hideSoftInputFromWindow(question_text.getWindowToken(), 0);
                                         EXECUTE_ACTION = false;
                                         return false;
                                     }
@@ -111,7 +117,9 @@ public class MainActivity extends Activity {
                                     @Override
                                     public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
                                         hud.dismiss();
-                                        tvAnswer.setText("A : " + data.getAnswer().toUpperCase());
+                                        tvAnswer.setText(data.getAnswer().toUpperCase());
+                                        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                                        inputMethodManager.hideSoftInputFromWindow(question_text.getWindowToken(), 0);
                                         EXECUTE_ACTION = false;
                                         return false;
                                     }

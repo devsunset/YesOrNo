@@ -16,7 +16,6 @@ public class Launcher extends Activity {
     @BindView(R.id.progress)
     ProgressBar progress;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +35,7 @@ public class Launcher extends Activity {
             protected Void doInBackground(Void... voids) {
                 try{
                     for(int i = 0; i  < 5; i++){
-                        Thread.sleep(200);
+                        Thread.sleep(150);
                         progress.setProgress(i);
                     }
                 }catch (Exception e){
