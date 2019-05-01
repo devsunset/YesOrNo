@@ -20,6 +20,10 @@
             android:windowSoftInputMode="adjustResize"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9759848654197811~3403541004"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

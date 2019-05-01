@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/content_bg"
@@ -13,8 +14,7 @@
         android:orientation="horizontal">
 
         <!-- Sample ID : ca-app-pub-3940256099942544/6300978111 -->
-        <!-- REAL ID :  -->
-        <!--
+        <!-- REAL ID :  ca-app-pub-9759848654197811/4704303941-->
         <com.google.android.gms.ads.AdView
             android:id="@+id/ad_view"
             android:layout_width="match_parent"
@@ -23,9 +23,9 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            ads:adUnitId="ca-app-pub-9759848654197811/4704303941">
         </com.google.android.gms.ads.AdView>
-        -->
+
     </LinearLayout>
 
     <LinearLayout
@@ -126,6 +126,26 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="[API] https://yesno.wtf/"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textSize="9dp" />
+
+    </LinearLayout>
+
 
     <View
         android:layout_width="match_parent"

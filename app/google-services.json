@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "70068709561",
+    "firebase_url": "https://yesorno-app.firebaseio.com",
+    "project_id": "yesorno-app",
+    "storage_bucket": "yesorno-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70068709561:android:743d60432d9b2e08",
+        "android_client_info": {
+          "package_name": "devsunset.app.yesorno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70068709561-nftmbkeccaa010f5dc0lfhb1jspmktuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt2rcvlRoGcJzIYTqhsUy51PWSZzPi4WU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70068709561-nftmbkeccaa010f5dc0lfhb1jspmktuf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
