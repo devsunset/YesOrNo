@@ -9,7 +9,7 @@ Android Programming Study
 
 ---------------------------------------------------------------
 
-#Google Store Link
+# Google Store Link
 https://play.google.com/store/apps/details?id=devsunset.app.yesorno&hl=ko
 
 # One Store Link
