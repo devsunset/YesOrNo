@@ -8,8 +8,8 @@ android {
     defaultConfig {
         applicationId "devsunset.app.yesorno"
         minSdkVersion 21
-        targetSdkVersion 28
-        versionCode 1
+        targetSdkVersion 30
+        versionCode 2
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -62,9 +62,9 @@ dependencies {
     //firebase core
     implementation 'com.google.firebase:firebase-core:16.0.7'
     //friebase crashlytics
-    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.9'
+    //implementation 'com.crashlytics.sdk.android:crashlytics:17.2.2'
     //firebase performance
     implementation 'com.google.firebase:firebase-perf:16.2.3'
     //firebase ads
-    implementation 'com.google.android.gms:play-services-ads:16.0.0'
+    //implementation 'com.google.android.gms:play-services-ads:16.0.0'
 }

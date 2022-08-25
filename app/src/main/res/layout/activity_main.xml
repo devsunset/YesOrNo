@@ -1,38 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/content_bg"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/black"
-        android:gravity="center"
-        android:orientation="horizontal">
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:background="@color/black"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="horizontal">-->
 
-        <!-- Sample ID : ca-app-pub-3940256099942544/6300978111 -->
-        <!-- REAL ID :  ca-app-pub-9759848654197811/4704303941-->
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/ad_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-9759848654197811/4704303941">
-        </com.google.android.gms.ads.AdView>
+    <!--        &lt;!&ndash; Sample ID : ca-app-pub-3940256099942544/6300978111 &ndash;&gt;-->
+    <!--        &lt;!&ndash; REAL ID :  ca-app-pub-9759848654197811/4704303941&ndash;&gt;-->
+    <!--        <com.google.android.gms.ads.AdView-->
+    <!--            android:id="@+id/ad_view"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            ads:adSize="BANNER"-->
+    <!--            ads:adUnitId="ca-app-pub-9759848654197811/4704303941"></com.google.android.gms.ads.AdView>-->
 
-    </LinearLayout>
+    <!--    </LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
         android:background="@color/progress"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
@@ -45,17 +43,12 @@
 
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#D2D2D2" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="50dp"
         android:background="@color/white"
         android:gravity="center_vertical"
+        android:minHeight="50dp"
         android:orientation="horizontal">
 
         <TextView
@@ -72,18 +65,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:layout_weight="1"
             android:textColor="@color/black"
             android:textSize="14dp" />
 
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#D2D2D2" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,26 +94,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:paddingLeft="5dp"
             android:layout_weight="1"
+            android:paddingLeft="5dp"
             android:textColor="@color/black"
             android:textSize="14dp" />
 
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#D2D2D2" />
-
-    <com.github.chrisbanes.photoview.PhotoView
-        android:id="@+id/view_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:adjustViewBounds="true" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -137,21 +111,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="10dp"
             android:text="[API] https://yesno.wtf/"
             android:textColor="@color/black"
-            android:padding="10dp"
             android:textSize="9dp" />
 
     </LinearLayout>
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#D2D2D2" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -159,6 +126,17 @@
         android:background="#F7F7F7"
         android:gravity="center_vertical"
         android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/btn_selector_common"
+            android:padding="6dp"
+            android:text="SEND"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <EditText
             android:id="@+id/question_text"
@@ -175,17 +153,37 @@
             android:minHeight="60dp"
             android:padding="6dp" />
 
-        <Button
-            android:id="@+id/btnSend"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="6dp"
-            android:background="@drawable/btn_selector_common"
-            android:padding="6dp"
-            android:text="SEND"
-            android:textColor="@color/white"
-            android:textSize="18dp" />
-
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D2D2D2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D2D2D2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D2D2D2" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D2D2D2" />
+
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/view_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true" />
 
 </LinearLayout>

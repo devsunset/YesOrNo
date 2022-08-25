@@ -33,16 +33,17 @@ public class Launcher extends Activity {
         class LoadingTask extends AsyncTask<Void, Void, Void> {
             @Override
             protected Void doInBackground(Void... voids) {
-                try{
-                    for(int i = 0; i  < 5; i++){
+                try {
+                    for (int i = 0; i < 5; i++) {
                         Thread.sleep(150);
                         progress.setProgress(i);
                     }
-                }catch (Exception e){
+                } catch (Exception e) {
                     //skip
                 }
                 return null;
             }
+
             @Override
             protected void onPostExecute(Void aVoid) {
                 initActivity();
